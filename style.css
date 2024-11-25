@@ -1,0 +1,109 @@
+
+body {
+    background-color: rgb(8, 8, 7);
+}
+
+#Heading {
+    text-align: center;
+    color: rgb(255, 208, 0);
+    font-family: 'Dokdo', cursive;
+    margin-bottom: 5%;
+    
+
+}
+hr.new4 {
+    border: 1px solid red;
+}
+.main-container {
+    margin-top: 6%;
+    background-color: rgba(20, 196, 255, 0.43);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    background-color: white;
+    padding: 10px;
+    margin: 0px auto;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    gap: 6px;
+    margin-bottom: 3%;
+   
+}
+.gallery-img {
+    flex-basis: calc(20% - 6px);
+    margin-bottom: 6px;
+    cursor: pointer;
+    opacity: 0.85;
+  
+
+}
+ .gallery-img:hover {
+    opacity: 1;
+}
+.gallery-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.gallery-img img:hover {
+    transform: scale(.8,.8);
+    transition: .5s transform;
+    filter: grayscale(0);
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .gallery-img {
+
+        flex-basis: calc(25% - 6px); 
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .gallery-img {
+
+        flex-basis: calc(33.33% - 6px); 
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .gallery-img {
+
+        flex-basis: calc(50% - 6px); 
+
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .gallery-img {
+
+        flex-basis: 100%; 
+
+    }
+
+}
+
